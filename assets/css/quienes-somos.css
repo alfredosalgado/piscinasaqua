@@ -3,7 +3,7 @@
 /* Hero About Section */
 .hero-about {
   background: linear-gradient(135deg, rgba(0, 119, 190, 0.9), rgba(0, 188, 212, 0.8)), 
-              url('../img/about-hero-bg.jpg') center/cover;
+              url('../img/heropages.jpg') center/cover;
   min-height: 60vh;
   display: flex;
   align-items: center;

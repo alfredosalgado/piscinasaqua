@@ -2,8 +2,8 @@
 
 /* Hero Contact Section */
 .hero-contact {
-  background: linear-gradient(135deg, rgba(0, 119, 190, 0.9), rgba(0, 188, 212, 0.8)), 
-              url('../img/contact-hero-bg.jpg') center/cover;
+  background: linear-gradient(135deg, rgba(0, 120, 190, 0.493), rgba(0, 187, 212, 0.486)), 
+              url('../img/heropages.jpg') center/cover;
   min-height: 60vh;
   display: flex;
   align-items: center;
