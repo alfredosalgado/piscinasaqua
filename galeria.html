@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Piscinas Aqua</title>
+    <meta name="description" content="Galería de proyectos de Piscinas Aqua. Vea nuestros trabajos realizados en construcción de piscinas de hormigón y arena.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/galeria.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/img/logo.jpeg" alt="Piscinas Aqua Logo" class="logo">
+                    <span class="logo-text">Piscinas Aqua</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quienes-somos.html" class="nav-link">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria.html" class="nav-link active">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-gallery">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Nuestra Galería</h1>
+                    <p class="hero-subtitle">Descubra la calidad de nuestros proyectos realizados</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Filter -->
+        <section class="gallery-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos los Proyectos</button>
+                    <button class="filter-btn" data-filter="hormigon">Piscinas de Hormigón</button>
+                    <button class="filter-btn" data-filter="arena">Piscinas de Arena</button>
+                    <button class="filter-btn" data-filter="revestimientos">Revestimientos</button>
+                    <button class="filter-btn" data-filter="equipos">Equipos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Gallery -->
+        <section class="projects-gallery section">
+            <div class="container">
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Proyecto 1 -->
+                    <div class="project-card" data-category="hormigon" data-project="proyecto1">
+                        <div class="project-image">
+                            <img src="assets/img/galeria/proyecto1/imagen1.jpg" alt="Proyecto 1 - Piscina de Hormigón" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Piscina Residencial Las Condes</h3>
+                                    <p class="project-description">Piscina de hormigón con revestimiento Diamond Brite</p>
+                                    <button class="btn btn-primary view-project" data-project="proyecto1">Ver Proyecto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Piscina de Hormigón</span>
+                            <h4 class="project-name">Piscina Residencial Las Condes</h4>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="project-card" data-category="arena" data-project="proyecto2">
+                        <div class="project-image">
+                            <img src="assets/img/galeria/proyecto2/imagen1.jpg" alt="Proyecto 2 - Piscina de Arena" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Piscina Tipo Playa Vitacura</h3>
+                                    <p class="project-description">Piscina de arena con acceso gradual</p>
+                                    <button class="btn btn-primary view-project" data-project="proyecto2">Ver Proyecto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Piscina de Arena</span>
+                            <h4 class="project-name">Piscina Tipo Playa Vitacura</h4>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="project-card" data-category="revestimientos" data-project="proyecto3">
+                        <div class="project-image">
+                            <img src="assets/img/galeria/proyecto3/imagen1.jpg" alt="Proyecto 3 - Revestimiento Mosaicos" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Renovación con Mosaicos</h3>
+                                    <p class="project-description">Revestimiento completo con mosaicos vítreos</p>
+                                    <button class="btn btn-primary view-project" data-project="proyecto3">Ver Proyecto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-category">Revestimientos</span>
+                            <h4 class="project-name">Renovación con Mosaicos</h4>
+                        </div>
+                    </div>
+
+                    <!-- Más proyectos pueden agregarse aquí -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modal -->
+        <div class="project-modal" id="projectModal">
+            <div class="modal-overlay" id="modalOverlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">&times;</button>
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalTitle">Título del Proyecto</h2>
+                    <span class="modal-category" id="modalCategory">Categoría</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-gallery">
+                        <div class="main-image">
+                            <img src="" alt="" id="mainImage" class="modal-main-img">
+                        </div>
+                        <div class="thumbnail-gallery" id="thumbnailGallery">
+                            <!-- Thumbnails se cargan dinámicamente -->
+                        </div>
+                    </div>
+                    <div class="modal-info">
+                        <h3>Detalles del Proyecto</h3>
+                        <div class="project-specs" id="projectSpecs">
+                            <!-- Especificaciones se cargan dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="prevProject">Proyecto Anterior</button>
+                    <button class="btn btn-primary" id="nextProject">Siguiente Proyecto</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">¿Le gustó alguno de nuestros proyectos?</h2>
+                    <p class="cta-description">Contáctenos para crear un proyecto similar adaptado a sus necesidades.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/56951888282" class="btn btn-whatsapp" target="_blank">
+                            <i class="icon-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </a>
+                        <a href="contacto.html" class="btn btn-primary">Solicitar Cotización</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/img/logo.jpeg" alt="Piscinas Aqua Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">Piscinas Aqua</span>
+                    </div>
+                    <p class="footer-description">
+                        Especialistas en construcción de piscinas con 5 años de experiencia en el mercado.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="servicios.html#hormigon">Piscinas de Hormigón</a></li>
+                        <li><a href="servicios.html#arena">Piscinas de Arena</a></li>
+                        <li><a href="servicios.html#revestimientos">Revestimientos</a></li>
+                        <li><a href="servicios.html#equipos">Instalación de Equipos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contacto</h3>
+                    <div class="contact-info">
+                        <p><i class="icon-phone"></i> +56985152039</p>
+                        <p><i class="icon-whatsapp"></i> +56951888282</p>
+                        <p><i class="icon-instagram"></i> @piscinasaqua.cl</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/piscinasaqua.cl" target="_blank" class="social-link">
+                            <i class="icon-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/56951888282" target="_blank" class="social-link">
+                            <i class="icon-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Piscinas Aqua. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/galeria.js"></script>
+</body>
+</html>
