@@ -34,7 +34,7 @@ Crear una presencia digital profesional que permita a Piscinas Aqua:
 
 ### 🚀 **Funcionalidades**
 - **Formulario de Contacto** con validación en tiempo real
-- **Galería Interactiva** con modal y sistema de filtros
+- **Proyectos Interactivos** con modal y sistema de filtros
 - **Smooth Scrolling** y efectos parallax
 - **Lazy Loading** de imágenes para mejor performance
 - **Notificaciones Dinámicas** para feedback del usuario
@@ -55,7 +55,7 @@ Crear una presencia digital profesional que permita a Piscinas Aqua:
 ├── 📄 index.html              # Página principal
 ├── 📄 quienes-somos.html      # Información corporativa
 ├── 📄 servicios.html          # Servicios detallados
-├── 📄 galeria.html            # Galería de proyectos
+├── 📄 galeria.html            # Proyectos realizados
 ├── 📄 contacto.html           # Formulario y contacto
 ├── 📄 logo.jpeg               # Logo principal
 ├── 📁 assets/
@@ -108,7 +108,7 @@ Crear una presencia digital profesional que permita a Piscinas Aqua:
 - **Instalación de Equipos** - Filtros, bombas, ionizadores, focos
 - **Mantención** - Servicios completos durante todo el año
 
-### 🖼️ **Galería (galeria.html)**
+### 🖼️ **Proyectos (galeria.html)**
 - **Filtros por Categoría** - Hormigón, Arena, Revestimientos, Equipos
 - **Modal Interactivo** - Vista detallada de proyectos
 - **Navegación entre Proyectos** - Anterior/Siguiente
