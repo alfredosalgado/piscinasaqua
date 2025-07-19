@@ -31,9 +31,7 @@
   background: var(--white);
   padding: var(--spacing-xl) 0;
   box-shadow: var(--shadow-sm);
-  position: sticky;
-  top: 70px;
-  z-index: 100;
+  position: static;
 }
 
 .filter-buttons {
@@ -468,7 +466,17 @@
   }
 
   .thumbnail-gallery {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    overflow-x: visible;
+    max-width: 100%;
+  }
+
+  .thumbnail {
+    width: 70px;
+    height: 50px;
+    margin: 2px;
   }
 }
 
