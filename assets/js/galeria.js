@@ -8,58 +8,167 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Datos de los proyectos (en una aplicación real, esto vendría de una API)
 const projectsData = {
-    proyecto1: {
-        title: 'Piscina Residencial Las Condes',
+    cerrillos3: {
+        title: 'Proyecto Cerrillos III',
         category: 'Piscina de Hormigón',
-        description: 'Piscina de hormigón con revestimiento Diamond Brite y sistema de iluminación LED',
+        description: 'Piscina de hormigón residencial construida con técnicas avanzadas y acabados de calidad',
         images: [
-            'assets/img/galeria/proyecto1/imagen1.jpg',
-            'assets/img/galeria/proyecto1/imagen2.jpg',
-            'assets/img/galeria/proyecto1/imagen3.jpg'
+            'assets/img/galeria/Proyecto Cerrillos III/1.jpg',
+            'assets/img/galeria/Proyecto Cerrillos III/2.jpg',
+            'assets/img/galeria/Proyecto Cerrillos III/3.jpg',
+            'assets/img/galeria/Proyecto Cerrillos III/4.jpg'
         ],
         specs: {
-            'Dimensiones': '8m x 4m x 1.5m',
+            'Ubicación': 'Cerrillos, Santiago',
             'Tipo': 'Piscina de Hormigón',
-            'Revestimiento': 'Diamond Brite Azul',
-            'Equipos': 'Filtro de arena, Bomba 1HP, Iluminación LED',
-            'Tiempo de construcción': '3 semanas',
-            'Ubicación': 'Las Condes, Santiago'
+            'Método de construcción': 'Hand Pack',
+            'Equipos': 'Sistema de filtración completo',
+            'Estado': 'Completado'
         }
     },
-    proyecto2: {
-        title: 'Piscina Tipo Playa Vitacura',
-        category: 'Piscina de Arena',
-        description: 'Piscina de arena con acceso gradual tipo playa y sistema de climatización',
+    colina: {
+        title: 'Proyecto Colina',
+        category: 'Piscina de Hormigón',
+        description: 'Piscina de hormigón con equipamiento completo y sistema de filtración avanzado',
         images: [
-            'assets/img/galeria/proyecto2/imagen1.jpg',
-            'assets/img/galeria/proyecto2/imagen2.jpg',
-            'assets/img/galeria/proyecto2/imagen3.jpg'
+            'assets/img/galeria/Proyecto Colina/1.jpg',
+            'assets/img/galeria/Proyecto Colina/2.jpg',
+            'assets/img/galeria/Proyecto Colina/3.jpg',
+            'assets/img/galeria/Proyecto Colina/4.jpg',
+            'assets/img/galeria/Proyecto Colina/5.jpg'
         ],
         specs: {
-            'Dimensiones': '10m x 6m x 1.8m',
-            'Tipo': 'Piscina de Arena',
-            'Revestimiento': 'Arena de cuarzo con resina',
-            'Equipos': 'Sistema de filtración, Bomba de calor, Limpiafondos automático',
-            'Tiempo de construcción': '4 semanas',
-            'Ubicación': 'Vitacura, Santiago'
+            'Ubicación': 'Colina, Santiago',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Encofrado',
+            'Equipos': 'Filtro, bomba, iluminación LED',
+            'Estado': 'Completado'
         }
     },
-    proyecto3: {
-        title: 'Renovación con Mosaicos',
-        category: 'Revestimientos',
-        description: 'Renovación completa de piscina existente con mosaicos vítreos importados',
+    donihue: {
+        title: 'Proyecto Doñihue',
+        category: 'Piscina de Hormigón',
+        description: 'Construcción de piscina familiar con diseño funcional y acabados de calidad',
         images: [
-            'assets/img/galeria/proyecto3/imagen1.jpg',
-            'assets/img/galeria/proyecto3/imagen2.jpg',
-            'assets/img/galeria/proyecto3/imagen3.jpg'
+            'assets/img/galeria/Proyecto Doñihue/1.jpg',
+            'assets/img/galeria/Proyecto Doñihue/2.jpg',
+            'assets/img/galeria/Proyecto Doñihue/3.jpg',
+            'assets/img/galeria/Proyecto Doñihue/4.jpg'
         ],
         specs: {
-            'Dimensiones': '7m x 3.5m x 1.4m',
-            'Tipo': 'Renovación',
-            'Revestimiento': 'Mosaicos vítreos azul turquesa',
-            'Equipos': 'Renovación sistema de filtración',
-            'Tiempo de construcción': '2 semanas',
-            'Ubicación': 'Providencia, Santiago'
+            'Ubicación': 'Doñihue, Región de O\'Higgins',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Hand Pack',
+            'Equipos': 'Sistema básico de filtración',
+            'Estado': 'Completado'
+        }
+    },
+    maipu: {
+        title: 'Proyecto Maipu',
+        category: 'Piscina de Hormigón',
+        description: 'Piscina de hormigón residencial con acabados de calidad',
+        images: [
+            'assets/img/galeria/Proyecto Maipu/1.jpg',
+            'assets/img/galeria/Proyecto Maipu/2.jpg',
+            'assets/img/galeria/Proyecto Maipu/3.jpg',
+            'assets/img/galeria/Proyecto Maipu/4.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Maipu, Santiago',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Hand Pack',
+            'Equipos': 'Sistema de filtración completo',
+            'Estado': 'Completado'
+        }
+    },
+    puentealto1: {
+        title: 'Proyecto Puente Alto I',
+        category: 'Piscina de Hormigón',
+        description: 'Piscina residencial de hormigón con diseño moderno y funcional',
+        images: [
+            'assets/img/galeria/Proyecto Puente Alto I/1.jpg',
+            'assets/img/galeria/Proyecto Puente Alto I/2.jpg',
+            'assets/img/galeria/Proyecto Puente Alto I/3.jpg',
+            'assets/img/galeria/Proyecto Puente Alto I/4.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Puente Alto, Santiago',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Hand Pack',
+            'Equipos': 'Filtro de arena, bomba autocebante',
+            'Estado': 'Completado'
+        }
+    },
+    quintanormal: {
+        title: 'Proyecto Quinta Normal',
+        category: 'Piscina de Hormigón',
+        description: 'Piscina de hormigón con acabados de calidad y sistema completo',
+        images: [
+            'assets/img/galeria/Proyecto Quinta Normal/1.jpg',
+            'assets/img/galeria/Proyecto Quinta Normal/2.jpg',
+            'assets/img/galeria/Proyecto Quinta Normal/3.jpg',
+            'assets/img/galeria/Proyecto Quinta Normal/4.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Quinta Normal, Santiago',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Encofrado',
+            'Equipos': 'Sistema completo de filtración',
+            'Estado': 'Completado'
+        }
+    },
+    requinoa: {
+        title: 'Proyecto Requinoa',
+        category: 'Piscina de Hormigón',
+        description: 'Construcción completa de piscina con todos los equipos y acabados',
+        images: [
+            'assets/img/galeria/Proyecto Requinoa/1.jpg',
+            'assets/img/galeria/Proyecto Requinoa/2.jpg',
+            'assets/img/galeria/Proyecto Requinoa/3.jpg',
+            'assets/img/galeria/Proyecto Requinoa/4.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Requinoa, Región de O\'Higgins',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Encofrado',
+            'Equipos': 'Sistema completo de filtración y limpieza',
+            'Estado': 'Completado'
+        }
+    },
+    tiltil: {
+        title: 'Proyecto TilTil',
+        category: 'Piscina de Hormigón',
+        description: 'Piscina de hormigón con instalación completa de equipos y sistemas',
+        images: [
+            'assets/img/galeria/Proyecto TilTil/1.jpg',
+            'assets/img/galeria/Proyecto TilTil/2.jpg',
+            'assets/img/galeria/Proyecto TilTil/3.jpg',
+            'assets/img/galeria/Proyecto TilTil/4.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Til Til, Región Metropolitana',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Hand Pack',
+            'Equipos': 'Filtro, bomba, iluminación, tablero eléctrico',
+            'Estado': 'Completado'
+        }
+    },
+    vitacura: {
+        title: 'Proyecto Vitacura',
+        category: 'Piscina de Hormigón',
+        description: 'Piscina de hormigón con acabados premium y equipamiento de alta gama',
+        images: [
+            'assets/img/galeria/Proyecto Vitacura/1.jpg',
+            'assets/img/galeria/Proyecto Vitacura/2.jpg',
+            'assets/img/galeria/Proyecto Vitacura/3.jpg',
+            'assets/img/galeria/Proyecto Vitacura/4.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Vitacura, Santiago',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Hand Pack',
+            'Equipos': 'Sistema de filtración de alta gama',
+            'Estado': 'Completado'
         }
     }
 };
