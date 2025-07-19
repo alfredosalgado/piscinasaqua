@@ -2,8 +2,8 @@
 
 /* Hero Services Section */
 .hero-services {
-  background: linear-gradient(135deg, rgba(0, 119, 190, 0.9), rgba(0, 188, 212, 0.8)), 
-              url('../img/services-hero-bg.jpg') center/cover;
+  background: linear-gradient(135deg, rgba(0, 119, 190, 0.9), rgba(0, 188, 212, 0.8)),
+    url('../img/services-hero-bg.jpg') center/cover;
   min-height: 60vh;
   display: flex;
   align-items: center;
@@ -625,6 +625,42 @@
   line-height: 1.6;
 }
 
+/* Mantención Section */
+#mantencion {
+  background: linear-gradient(135deg, rgba(0, 120, 190, 0.418), rgba(0, 187, 212, 0.356)),
+    url('../img/servicios/mantencion.jpg') center/cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#mantencion .section-title {
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#mantencion .section-intro {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Bordes Section */
+#bordes {
+  background: linear-gradient(135deg, rgba(0, 120, 190, 0.411), rgba(0, 187, 212, 0.363)),
+    url('../img/servicios/instbordes.jpg') center/cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#bordes .section-title {
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#bordes .section-intro {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
 /* Mantención Grid */
 .mantencion-grid {
   display: grid;
@@ -753,25 +789,69 @@
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.revestimiento-card:nth-child(1) { animation-delay: 0.1s; }
-.revestimiento-card:nth-child(2) { animation-delay: 0.2s; }
-.revestimiento-card:nth-child(3) { animation-delay: 0.3s; }
+.revestimiento-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
 
-.borde-option:nth-child(1) { animation-delay: 0.1s; }
-.borde-option:nth-child(2) { animation-delay: 0.2s; }
-.borde-option:nth-child(3) { animation-delay: 0.3s; }
+.revestimiento-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
 
-.equipo-item:nth-child(1) { animation-delay: 0.1s; }
-.equipo-item:nth-child(2) { animation-delay: 0.2s; }
-.equipo-item:nth-child(3) { animation-delay: 0.3s; }
-.equipo-item:nth-child(4) { animation-delay: 0.4s; }
-.equipo-item:nth-child(5) { animation-delay: 0.5s; }
-.equipo-item:nth-child(6) { animation-delay: 0.6s; }
+.revestimiento-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
 
-.mantencion-card:nth-child(1) { animation-delay: 0.1s; }
-.mantencion-card:nth-child(2) { animation-delay: 0.2s; }
-.mantencion-card:nth-child(3) { animation-delay: 0.3s; }
-.mantencion-card:nth-child(4) { animation-delay: 0.4s; }
+.borde-option:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.borde-option:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.borde-option:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.equipo-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.equipo-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.equipo-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.equipo-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.equipo-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.equipo-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.mantencion-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.mantencion-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.mantencion-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.mantencion-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
 /* Responsive Design */
 @media (max-width: 992px) {
@@ -922,8 +1002,13 @@ html {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes fadeInUp {
@@ -931,11 +1016,14 @@ html {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}/* 
+}
+
+/* 
 ===== CTA SECTION ESPECÍFICA PARA SERVICIOS ===== */
 .cta {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -970,8 +1058,13 @@ html {
 }
 
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .cta-content {
@@ -1078,6 +1171,7 @@ html {
     opacity: 0;
     transform: translateY(50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1134,7 +1228,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
+  background-image:
     radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
@@ -1143,9 +1237,12 @@ html {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
