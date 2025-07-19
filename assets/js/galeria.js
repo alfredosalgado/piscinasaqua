@@ -72,6 +72,9 @@ function initGalleryFilter() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
+    // Mostrar todos los proyectos al cargar la página
+    showAllProjects();
+
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
             const filter = this.dataset.filter;
@@ -81,25 +84,37 @@ function initGalleryFilter() {
             this.classList.add('active');
 
             // Filtrar proyectos
-            projectCards.forEach(card => {
-                const category = card.dataset.category;
-                
-                if (filter === 'all' || category === filter) {
-                    card.style.display = 'block';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    }, 100);
-                } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(20px)';
-                    setTimeout(() => {
-                        card.style.display = 'none';
-                    }, 300);
-                }
-            });
+            filterProjects(filter);
         });
     });
+
+    function showAllProjects() {
+        projectCards.forEach(card => {
+            card.style.display = 'block';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        });
+    }
+
+    function filterProjects(filter) {
+        projectCards.forEach(card => {
+            const category = card.dataset.category;
+            
+            if (filter === 'all' || category === filter) {
+                card.style.display = 'block';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            } else {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.display = 'none';
+                }, 300);
+            }
+        });
+    }
 }
 
 // ===== MODAL DE PROYECTO =====
