@@ -6,24 +6,24 @@
   --primary-light: #33a3d1;
   --secondary-color: #00bcd4;
   --accent-color: #ff6b35;
-  
+
   /* Colores neutros */
   --white: #ffffff;
   --light-gray: #f8f9fa;
   --gray: #6c757d;
   --dark-gray: #343a40;
   --black: #000000;
-  
+
   /* Colores de estado */
   --success: #28a745;
   --warning: #ffc107;
   --error: #dc3545;
   --info: #17a2b8;
-  
+
   /* Tipografía */
   --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-secondary: 'Arial', sans-serif;
-  
+
   /* Tamaños de fuente */
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -34,7 +34,7 @@
   --font-size-3xl: 1.875rem;
   --font-size-4xl: 2.25rem;
   --font-size-5xl: 3rem;
-  
+
   /* Espaciado */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -43,24 +43,24 @@
   --spacing-xl: 2rem;
   --spacing-2xl: 3rem;
   --spacing-3xl: 4rem;
-  
+
   /* Bordes */
   --border-radius-sm: 0.25rem;
   --border-radius-md: 0.5rem;
   --border-radius-lg: 1rem;
   --border-radius-xl: 1.5rem;
-  
+
   /* Sombras */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  
+
   /* Transiciones */
   --transition-fast: 0.15s ease-in-out;
   --transition-normal: 0.3s ease-in-out;
   --transition-slow: 0.5s ease-in-out;
-  
+
   /* Breakpoints */
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -91,19 +91,41 @@ body {
 }
 
 /* ===== TIPOGRAFÍA ===== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--spacing-md);
   color: var(--dark-gray);
 }
 
-h1 { font-size: var(--font-size-5xl); }
-h2 { font-size: var(--font-size-4xl); }
-h3 { font-size: var(--font-size-3xl); }
-h4 { font-size: var(--font-size-2xl); }
-h5 { font-size: var(--font-size-xl); }
-h6 { font-size: var(--font-size-lg); }
+h1 {
+  font-size: var(--font-size-5xl);
+}
+
+h2 {
+  font-size: var(--font-size-4xl);
+}
+
+h3 {
+  font-size: var(--font-size-3xl);
+}
+
+h4 {
+  font-size: var(--font-size-2xl);
+}
+
+h5 {
+  font-size: var(--font-size-xl);
+}
+
+h6 {
+  font-size: var(--font-size-lg);
+}
 
 p {
   margin-bottom: var(--spacing-md);
@@ -264,7 +286,7 @@ a:hover {
 
 .btn-secondary {
   background: transparent;
-  color: var(--primary-color);
+  color: white;
   border: 2px solid var(--primary-color);
 }
 
@@ -416,23 +438,65 @@ a:hover {
 }
 
 /* ===== UTILIDADES ===== */
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
+.text-center {
+  text-align: center;
+}
 
-.mb-0 { margin-bottom: 0; }
-.mb-1 { margin-bottom: var(--spacing-xs); }
-.mb-2 { margin-bottom: var(--spacing-sm); }
-.mb-3 { margin-bottom: var(--spacing-md); }
-.mb-4 { margin-bottom: var(--spacing-lg); }
-.mb-5 { margin-bottom: var(--spacing-xl); }
+.text-left {
+  text-align: left;
+}
 
-.mt-0 { margin-top: 0; }
-.mt-1 { margin-top: var(--spacing-xs); }
-.mt-2 { margin-top: var(--spacing-sm); }
-.mt-3 { margin-top: var(--spacing-md); }
-.mt-4 { margin-top: var(--spacing-lg); }
-.mt-5 { margin-top: var(--spacing-xl); }
+.text-right {
+  text-align: right;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mb-3 {
+  margin-bottom: var(--spacing-md);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.mb-5 {
+  margin-bottom: var(--spacing-xl);
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: var(--spacing-xs);
+}
+
+.mt-2 {
+  margin-top: var(--spacing-sm);
+}
+
+.mt-3 {
+  margin-top: var(--spacing-md);
+}
+
+.mt-4 {
+  margin-top: var(--spacing-lg);
+}
+
+.mt-5 {
+  margin-top: var(--spacing-xl);
+}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
@@ -474,9 +538,17 @@ a:hover {
     padding: 0 var(--spacing-sm);
   }
 
-  h1 { font-size: var(--font-size-3xl); }
-  h2 { font-size: var(--font-size-2xl); }
-  h3 { font-size: var(--font-size-xl); }
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  h3 {
+    font-size: var(--font-size-xl);
+  }
 
   .section {
     padding: var(--spacing-2xl) 0;
@@ -508,6 +580,7 @@ a:hover {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -519,6 +592,7 @@ a:hover {
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -530,6 +604,7 @@ a:hover {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -548,17 +623,355 @@ a:hover {
   animation: slideInRight 0.6s ease-out;
 }
 
+/* ===== BOTONES FLOTANTES ===== */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.floating-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  color: var(--white);
+  font-size: 24px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.floating-btn:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: var(--shadow-xl);
+  color: var(--white);
+}
+
+.scroll-to-top {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  animation-delay: 0.2s;
+}
+
+.scroll-to-top:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+}
+
+.whatsapp-float {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  animation-delay: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-float:hover {
+  background: linear-gradient(135deg, #128c7e, #25d366);
+}
+
+.whatsapp-float::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: whatsappPulse 2s infinite;
+}
+
+/* Animación de pulso para WhatsApp */
+@keyframes whatsappPulse {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  70% {
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+  }
+
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+}
+
+/* Animación de aparición */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ocultar botón de scroll cuando está en la parte superior */
+.scroll-to-top.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
+/* Responsive para botones flotantes */
+@media (max-width: 768px) {
+  .floating-buttons {
+    bottom: 15px;
+    right: 15px;
+    gap: var(--spacing-sm);
+  }
+
+  .floating-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .whatsapp-float::before {
+    animation: whatsappPulseMobile 2s infinite;
+  }
+}
+
+@keyframes whatsappPulseMobile {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  70% {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+  }
+
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}
+
 /* ===== ICONOS PLACEHOLDER ===== */
-.icon-concrete::before { content: "🏗️"; }
-.icon-sand::before { content: "🏖️"; }
-.icon-coating::before { content: "🎨"; }
-.icon-equipment::before { content: "⚙️"; }
-.icon-maintenance::before { content: "🔧"; }
-.icon-border::before { content: "🧱"; }
-.icon-speed::before { content: "⚡"; }
-.icon-price::before { content: "💰"; }
-.icon-complete::before { content: "✅"; }
-.icon-personal::before { content: "👥"; }
-.icon-whatsapp::before { content: "📱"; }
-.icon-phone::before { content: "📞"; }
-.icon-instagram::before { content: "📷"; }
+.icon-concrete::before {
+  content: "🏗️";
+}
+
+.icon-sand::before {
+  content: "🏖️";
+}
+
+.icon-coating::before {
+  content: "🎨";
+}
+
+.icon-equipment::before {
+  content: "⚙️";
+}
+
+.icon-maintenance::before {
+  content: "🔧";
+}
+
+.icon-border::before {
+  content: "🧱";
+}
+
+.icon-speed::before {
+  content: "⚡";
+}
+
+.icon-price::before {
+  content: "💰";
+}
+
+.icon-complete::before {
+  content: "✅";
+}
+
+.icon-personal::before {
+  content: "👥";
+}
+
+.icon-whatsapp::before {
+  content: "📱";
+}
+
+.icon-phone::before {
+  content: "📞";
+}
+
+.icon-instagram::before {
+  content: "📷";
+}
+
+/* ===
+== BOTONES FLOTANTES ===== */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.floating-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  color: var(--white);
+  font-size: 24px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.floating-btn:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: var(--shadow-xl);
+  color: var(--white);
+}
+
+.scroll-to-top {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  animation-delay: 0.2s;
+}
+
+.scroll-to-top:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+}
+
+/* Clase para ocultar el botón de scroll */
+.scroll-to-top.hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+  transform: translateY(20px) !important;
+  visibility: hidden;
+}
+
+.whatsapp-float {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  animation-delay: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-float:hover {
+  background: linear-gradient(135deg, #128c7e, #25d366);
+}
+
+.whatsapp-float::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: whatsappPulse 2s infinite;
+}
+
+/* Animación de pulso para WhatsApp */
+@keyframes whatsappPulse {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  70% {
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+  }
+
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+}
+
+/* Animación de aparición */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive para botones flotantes */
+@media (max-width: 768px) {
+  .floating-buttons {
+    bottom: 15px;
+    right: 15px;
+    gap: var(--spacing-sm);
+  }
+
+  .floating-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .whatsapp-float::before {
+    animation: whatsappPulseMobile 2s infinite;
+  }
+}
+
+@keyframes whatsappPulseMobile {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  70% {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+  }
+
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}

@@ -222,7 +222,7 @@
   box-shadow: var(--shadow-md);
   overflow: hidden;
   transition: all var(--transition-normal);
-  border: 2px solid transparent;
+  border: 2px solid rgba(0, 119, 190, 0.15);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -592,6 +592,8 @@
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-normal);
+  border-left: 4px solid var(--secondary-color);
+  border: 2px solid rgba(0, 188, 212, 0.15);
   border-left: 4px solid var(--secondary-color);
 }
 
