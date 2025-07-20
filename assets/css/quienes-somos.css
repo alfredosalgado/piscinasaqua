@@ -179,7 +179,7 @@
   box-shadow: var(--shadow-md);
   text-align: center;
   transition: all var(--transition-normal);
-  border: 2px solid transparent;
+  border: 2px solid rgba(0, 188, 212, 0.15);
   position: relative;
 }
 
@@ -232,6 +232,8 @@
   transition: all var(--transition-normal);
   position: relative;
   overflow: hidden;
+  border: 2px solid rgba(0, 119, 190, 0.15);
+  box-shadow: var(--shadow-md);
 }
 
 .value-card::before {
