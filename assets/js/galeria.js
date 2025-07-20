@@ -170,6 +170,115 @@ const projectsData = {
             'Equipos': 'Sistema de filtración de alta gama',
             'Estado': 'Completado'
         }
+    },
+    pirque3: {
+        title: 'Proyecto Pirque III',
+        category: 'Piscina de Hormigón',
+        description: 'Piscina de hormigón residencial con diseño moderno y acabados de calidad',
+        images: [
+            'assets/img/galeria/Proyecto Pirque III/1.jpg',
+            'assets/img/galeria/Proyecto Pirque III/2.jpg',
+            'assets/img/galeria/Proyecto Pirque III/3.jpg',
+            'assets/img/galeria/Proyecto Pirque III/4.jpg',
+            'assets/img/galeria/Proyecto Pirque III/5.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Pirque, Santiago',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Hand Pack',
+            'Equipos': 'Sistema completo de filtración y limpieza',
+            'Estado': 'Completado'
+        }
+    },
+    linderos: {
+        title: 'Proyecto Linderos',
+        category: 'Piscina de Hormigón',
+        description: 'Construcción de piscina familiar en Linderos con acabados de calidad',
+        images: [
+            'assets/img/galeria/Proyecto Linderos/1.jpg',
+            'assets/img/galeria/Proyecto Linderos/2.jpg',
+            'assets/img/galeria/Proyecto Linderos/3.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Linderos, Santiago',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Encofrado',
+            'Equipos': 'Sistema de filtración básico',
+            'Estado': 'Completado'
+        }
+    },
+    chicureo: {
+        title: 'Proyecto Chicureo',
+        category: 'Piscina de Hormigón',
+        description: 'Piscina de hormigón con instalación completa de equipos y sistemas avanzados',
+        images: [
+            'assets/img/galeria/Proyecto Chicureo/1.jpg',
+            'assets/img/galeria/Proyecto Chicureo/2.jpg',
+            'assets/img/galeria/Proyecto Chicureo/3.jpg',
+            'assets/img/galeria/Proyecto Chicureo/4.jpg',
+            'assets/img/galeria/Proyecto Chicureo/5.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Chicureo, Santiago',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Hand Pack',
+            'Equipos': 'Sistema completo: filtro, bomba, iluminación LED, ionizador',
+            'Estado': 'Completado'
+        }
+    },
+    pirque4: {
+        title: 'Proyecto Pirque IV',
+        category: 'Piscina de Hormigón',
+        description: 'Piscina residencial con acabados de calidad y equipamiento moderno',
+        images: [
+            'assets/img/galeria/Proyecto Pirque IV/1.jpg',
+            'assets/img/galeria/Proyecto Pirque IV/2.jpg',
+            'assets/img/galeria/Proyecto Pirque IV/3.jpg',
+            'assets/img/galeria/Proyecto Pirque IV/4.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Pirque, Santiago',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Encofrado',
+            'Equipos': 'Filtro de arena, bomba autocebante, tablero eléctrico',
+            'Estado': 'Completado'
+        }
+    },
+    batuco: {
+        title: 'Proyecto Batuco',
+        category: 'Piscina de Hormigón',
+        description: 'Construcción de piscina de hormigón en Batuco con equipamiento completo',
+        images: [
+            'assets/img/galeria/Proyecto Batuco/1.jpg',
+            'assets/img/galeria/Proyecto Batuco/2.jpg',
+            'assets/img/galeria/Proyecto Batuco/3.jpg',
+            'assets/img/galeria/Proyecto Batuco/4.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Batuco, Región Metropolitana',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Hand Pack',
+            'Equipos': 'Sistema de filtración completo con bomba y filtro',
+            'Estado': 'Completado'
+        }
+    },
+    santodomingo: {
+        title: 'Proyecto Santo Domingo',
+        category: 'Piscina de Hormigón',
+        description: 'Piscina de hormigón con vista al mar y acabados especiales',
+        images: [
+            'assets/img/galeria/Proyecto Santo Domingo/1.jpg',
+            'assets/img/galeria/Proyecto Santo Domingo/2.jpg',
+            'assets/img/galeria/Proyecto Santo Domingo/3.jpg',
+            'assets/img/galeria/Proyecto Santo Domingo/4.jpg'
+        ],
+        specs: {
+            'Ubicación': 'Santo Domingo, Región de Valparaíso',
+            'Tipo': 'Piscina de Hormigón',
+            'Método de construcción': 'Encofrado',
+            'Equipos': 'Sistema de filtración resistente al ambiente costero',
+            'Estado': 'Completado'
+        }
     }
 };
 
